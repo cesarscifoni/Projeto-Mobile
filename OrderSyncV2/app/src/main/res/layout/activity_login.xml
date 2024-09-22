@@ -21,8 +21,7 @@
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logoImageView"
@@ -71,6 +70,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#1DB954"
         android:layout_marginTop="45dp"
+        android:textStyle="bold"
         android:text="SIGN IN"
         android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword"

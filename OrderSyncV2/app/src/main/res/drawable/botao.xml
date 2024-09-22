@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cor de fundo do botão -->
+    <solid android:color="@color/white" />
+
+    <!-- Bordas arredondadas -->
+    <corners android:radius="16dp" />
+
+    <!-- Margem interna para ajustar o conteúdo do botão -->
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</shape>
