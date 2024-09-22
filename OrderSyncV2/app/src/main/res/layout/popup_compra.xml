@@ -1,0 +1,100 @@
+<!-- res/layout/popup_compra.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/fundo_perfil"
+    android:padding="20dp">
+
+    <!-- Nome do produto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Produto"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp" />
+
+    <!-- Preço do produto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço: R$ 100,00"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingBottom="10dp" />
+
+    <!-- Seletor de quantidade -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decreaseQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="10dp"
+            android:textStyle="bold"
+            android:text="subtrair" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/increaseQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="10dp"
+            android:textStyle="bold"
+            android:text="adicionar" />
+    </LinearLayout>
+
+    <!-- Preço total atualizado -->
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: R$ 100,00"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <!-- Botões de ação -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="10dp"
+            android:textStyle="bold"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="10dp"
+            android:textStyle="bold"
+            android:text="Confirmar Compra"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>
